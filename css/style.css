@@ -83,12 +83,15 @@ img{
     /* TODO  mulohazali ish shunday qilish yaxshimi yoki keyingi elem.ga padding-top*/
     margin-bottom: 95px; /*o'ylab ko'rish kerak*/
 }
-.sitenav {
+
+.sitenav-wrapper{
     display: flex;
     justify-content: end;
     align-items: center;
+}
+.sitenav {
     padding-top: 39px;
-    padding-bottom: 35px;
+    /* padding-bottom: 35px; */
 }
 .sitenav-list {
     display: flex;
@@ -98,7 +101,9 @@ img{
     margin-right: 60px;
 }
 .sitenav-link {
-    display: inline-block;
+    display: block;
+    padding-bottom: 33px;
+    border-bottom: 3px solid transparent;
     color: var(--accent-color);
     font-family: var(--roboto-font);
     font-size: 18px;
@@ -107,6 +112,7 @@ img{
     transition: all 0.3s ease;
 }
 .sitenav-link:hover{
+    border-bottom: 3px solid #1617DB;
     font-weight: 700;
 }
 .line-divider{
